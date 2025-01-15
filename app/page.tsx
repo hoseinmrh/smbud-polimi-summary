@@ -16,6 +16,11 @@ const readContentDirectory = (dir: string): { [key: string]: FileData[] } => {
     const itemPath = path.join(dir, item);
     const isDirectory = fs.statSync(itemPath).isDirectory();
 
+    // Skip the "Images" folder
+    if (item === "Images") {
+      return; // Skip this folder
+    }
+
     if (isDirectory) {
       const files = fs
         .readdirSync(itemPath)
@@ -51,7 +56,7 @@ export default async function Page() {
                   {files.map(({ slug }) => (
                     <li key={slug} className="text-left">
                       <Link
-                        href={`/content/${category}/${slug}`} // Updated href to include category
+                        href={`/content/${category}/${slug}`}
                         className="text-blue-400 hover:text-blue-300 underline"
                       >
                         {slug.replace(/_/g, " ")}
