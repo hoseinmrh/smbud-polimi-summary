@@ -1,6 +1,6 @@
 # Summary of VectorDB Theory
 
-## 1. Introduction
+## 1. Core Concepts
 
 ### 1.1. **Introduction to Vector Databases**
 
