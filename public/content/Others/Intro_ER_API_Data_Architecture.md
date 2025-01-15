@@ -105,10 +105,10 @@ What to take into account:
         -   User view
         -   Access rules
     -   Transmission
-
+---
 ## 3. API
 
-### 1. **What is an API?**
+### 3.1. **What is an API?**
 
 -   **API (Application Program Interface)**: A set of routines, protocols, and tools for building software applications.
 -   **WebAPI**: HTTP-based API for programmatic access to data and platforms.
@@ -116,7 +116,7 @@ What to take into account:
 
 ---
 
-### 2. **Why Use APIs?**
+### 3.2. **Why Use APIs?**
 
 -   Separation between model and presentation.
 -   Regulate access to data.
@@ -128,7 +128,7 @@ What to take into account:
 
 ---
 
-### 3. **How APIs Work**
+### 3.3. **How APIs Work**
 
 #### **URL Format**
 
@@ -154,7 +154,7 @@ What to take into account:
 
 ---
 
-### 4. **RESTful APIs**
+### 3.4. **RESTful APIs**
 
 -   **REST (Representational State Transfer)**: A software architecture style.
     -   **Client-Server**: Separates clients from servers.
@@ -175,7 +175,7 @@ What to take into account:
 
 ---
 
-### 5. **Authentication**
+### 3.5. **Authentication**
 
 -   Most APIs require user authentication.
 -   **OAuth Protocol**: Commonly used for authentication.
@@ -184,7 +184,7 @@ What to take into account:
 
 ---
 
-### 6. **Challenges**
+### 3.6. **Challenges**
 
 #### **Crawling**
 
@@ -221,7 +221,7 @@ What to take into account:
 
 ---
 
-### 7. **Key Takeaways**
+### 3.7. **Key Takeaways**
 
 -   APIs enable programmatic access to data and platforms.
 -   RESTful APIs use HTTP verbs for CRUD operations.
