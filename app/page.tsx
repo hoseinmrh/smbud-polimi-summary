@@ -51,13 +51,13 @@ export default async function Page() {
             <div className="text-3xl mb-4">List of contents:</div>
             {Object.entries(sections).map(([category, files]) => (
               <div key={category} className="mb-6 text-left">
-                <h2 className="text-2xl font-semibold mb-2">{category}</h2>
+                <h2 className="text-2xl font-semibold mb-2">{category}:</h2>
                 <ul className="space-y-2 list-none pl-0">
                   {files.map(({ slug }) => (
                     <li key={slug} className="text-left">
                       <Link
                         href={`/content/${category}/${slug}`}
-                        className="text-blue-400 hover:text-blue-300 underline"
+                        className="text-xl text-blue-200 hover:text-white"
                       >
                         {slug.replace(/_/g, " ")}
                       </Link>
@@ -69,6 +69,19 @@ export default async function Page() {
           </div>
         </div>
       </div>
+      <footer className="text-center text-xl text-blue-400">
+        <div className="mt-10 mb-20">
+          Created while{" "}
+          <span className="font-bold text-orange-500">Suffering 😢</span> by{" "}
+          <a
+            target="_blank"
+            href="https://hosein-mrh.vercel.app/"
+            className="text-gray-200 hover:text-white underline"
+          >
+            Hosein Mirhoseini
+          </a>
+        </div>
+      </footer>
     </main>
   );
 }

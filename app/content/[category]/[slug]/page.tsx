@@ -41,6 +41,19 @@ export default async function ContentPage({
             dangerouslySetInnerHTML={{ __html: htmlContent }}
           />
         </div>
+        <footer className="text-center text-xl text-blue-400">
+          <div className="mt-10 mb-20">
+            Created while{" "}
+            <span className="font-bold text-orange-500">Suffering 😢</span> by{" "}
+            <a
+              target="_blank"
+              href="https://hosein-mrh.vercel.app/"
+              className="text-gray-200 hover:text-white underline"
+            >
+              Hosein Mirhoseini
+            </a>
+          </div>
+        </footer>
       </main>
     );
   } catch (error) {
