@@ -1,6 +1,7 @@
 import fs from "fs";
 import path from "path";
 import Link from "next/link";
+import Image from "next/image";
 
 type FileData = {
   filename: string;
@@ -70,7 +71,7 @@ export default async function Page() {
         </div>
       </div>
       <footer className="text-center text-xl text-blue-400">
-        <div className="mt-10 mb-20">
+        <div className="mt-10 mb-10">
           Created while{" "}
           <span className="font-bold text-orange-500">Suffering 😢</span> by{" "}
           <a
@@ -80,6 +81,15 @@ export default async function Page() {
           >
             Hosein Mirhoseini
           </a>
+        </div>
+        <div className="flex justify-center mb-10">
+          <Image
+            src="/logo.png"
+            alt="Polimi Logo"
+            height={80}
+            width={80}
+            className="invert brightness-0"
+          />
         </div>
       </footer>
     </main>

@@ -3,6 +3,7 @@ import path from "path";
 import { marked } from "marked";
 import { notFound } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image";
 
 export default async function ContentPage({
   params,
@@ -42,7 +43,7 @@ export default async function ContentPage({
           />
         </div>
         <footer className="text-center text-xl text-blue-400">
-          <div className="mt-10 mb-20">
+          <div className="mt-10 mb-10">
             Created while{" "}
             <span className="font-bold text-orange-500">Suffering 😢</span> by{" "}
             <a
@@ -52,6 +53,15 @@ export default async function ContentPage({
             >
               Hosein Mirhoseini
             </a>
+          </div>
+          <div className="flex justify-center mb-10">
+            <Image
+              src="/logo.png"
+              alt="Polimi Logo"
+              height={80}
+              width={80}
+              className="invert brightness-0"
+            />
           </div>
         </footer>
       </main>
